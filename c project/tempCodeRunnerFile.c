@@ -4,7 +4,7 @@
 #include <time.h>
 
 char name[100];
-int dip_amt, amt = 1000, acc_no, withdraw_amt, transfer_amt;
+int depository_amt, amt = 1000, acc_no, withdraw_amt, transfer_amt;
 
 void menu();
 void record_transaction(const char *operation, int amount);
