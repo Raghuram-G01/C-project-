@@ -4,7 +4,7 @@
 #include <time.h>
 
 char name[100];
-int dip_amt, amt = 1000, acc_no, withdraw_amt, transfer_amt;
+int depository_amt, amt = 1000, acc_no, withdraw_amt, transfer_amt;
 
 void menu();
 void record_transaction(const char *operation, int amount);
@@ -80,9 +80,9 @@ void deposit_money() {
         printf("Invalid amount. Try again.\n");
         return;
     }
-    amt += dip_amt;
+    amt += depository_amt;
     printf("Deposited successfully. Current balance: %d\n", amt);
-    record_transaction("Deposit", dip_amt);
+    record_transaction("Deposit", depository_amt);
 }
 void withdraw_money() {
     printf("\n+---------------- WITHDRAW MONEY ---------------+\n");
